@@ -1,0 +1,127 @@
+@import "global_variables";
+
+.tutorial {
+    z-index: 999;
+    background: white;
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 255px);
+    margin: auto;
+    width: 430px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    transform: scale(.95);
+}
+
+#tut-close {
+    position: absolute;
+    top: 25px;
+    color: black;
+    right: 25px;
+    left: auto;
+}
+
+#tut-title {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.tutorial .div {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#tut-rocket-img {
+    width: 70px;
+    transform: rotate(40deg);
+}
+
+.tut-text {
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    justify-items: center;
+    width: 98%;
+    margin: auto;
+  }
+
+  .grid-item {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    //border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    //font-size: 30px;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  #tut-planet-cell {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  #tut-planet-text {
+    grid-row: 2;
+    grid-column: 1;
+    grid-column-end: 3;
+  }
+
+  #tut-arena-cell {
+      width: 100px;
+      grid-row: 3;
+      grid-column: 1;
+  }
+
+  #tut-arena-text {
+      grid-row: 3;
+      grid-column: 2;
+      grid-column-end: 4;
+  }
+
+  #tut-rocket-cell {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#tut-rocket-text {
+    grid-row: 1;
+    grid-column: 2;
+    grid-column-end: 4;
+}
+
+#tut-rocket-img {
+    width: 70px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+}
+
+#tut-arena-img {
+    width: 120px;
+    transform: rotate(-10deg);
+    margin-left: 25px;
+}
+
+#tut-planet-img {
+    width: 110px;
+}
+
+#begin-btn{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.tut-scroll-div {
+    position: relative;
+    top: 8%;
+}

@@ -1,0 +1,90 @@
+@import "./global_variables.scss";
+
+.game-over-score {
+    padding-top: 10px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: $dark-gray;
+}
+
+.game-over-num {
+    font-size: 48px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+//banner
+.msg {
+    background: $apple-green;
+    color: white;
+    padding-top: 15px;
+    font-size: 25px;
+    padding-bottom: 15px;
+    margin-top: 60px;
+}
+
+#replay-btn {
+    margin: 30px;
+}
+
+#return-btn {
+    margin: 30px;
+    margin-bottom: 20px;
+   // background-image: $space-img;
+   // background-size: 50%;
+}
+
+.score-text {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.multiplayer-score-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.score-wrapper {
+    height: 30%;
+    overflow: scroll;
+}
+
+.multiplayer-score-box {
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.mult-username {
+    display: inline-block;
+    font-size: 20px;
+}
+ 
+.mult-score {
+    font-size: 28px;
+    color: $dark-gray;
+}
+
+.mult-rank {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding-right: 10px;
+}
+
+#curr-score-display {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#high-score-display {
+    display: inline-block;
+    margin-left: 30px;
+}

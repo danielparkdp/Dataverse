@@ -1,0 +1,145 @@
+@import "./global_variables.scss";
+
+.bucket-outer-div {
+    position: absolute;
+    top:48%;
+    width: 100%;
+}
+
+.bucket-group {
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width: 80%;
+    height: 20%;
+    align-items: center;
+}
+
+.bucket {
+    margin: 10px;
+    padding-top: 15px;
+    font-size: 5vw; //79
+    margin: 0;
+    //height: 120px;
+    height: 8vw;
+    color: white;
+    background: $candy-blue;
+    opacity: .8;
+    width: 7vw; //12%
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+}
+
+.bucket:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.active-bucket {
+    background: $main-yellow;
+    opacity: 1;
+}
+
+.wrong-active-bucket {
+    background: $apple-red;
+    opacity: 1;
+}
+
+.bucket-contents {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    min-height: 100px;
+    border: solid $dark-gray 4px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.active-border {
+    border: solid $main-yellow 4px;
+}
+.wrong-active-border {
+    border: solid $apple-red 4px;
+}
+
+#mod-box {
+    right: 40%;
+    width: 20%;
+    min-width: 100px;
+    max-width: 250px;
+    height: 100px;
+    padding: 20px;
+    padding-top: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#remainder-label {
+    position: absolute;
+    margin: auto;
+    top:39%;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.white-arr{
+    position: absolute;
+    left: 26%;
+    top: 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10%;
+}
+
+.candy {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 24px;
+    vertical-align: center;
+}
+
+.candy-img {
+   width: 100%;
+}
+
+.candy-text{
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 26px;
+}
+
+.candy-wrapper {
+    position: relative;
+    width: 15%;
+    max-width: 200px;
+    min-width: 150px;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+
+.candy-wrapper:hover {
+   
+    transform: scale(1.15);
+}
+
+#hashmap-standings {
+    top: 37%;
+    flex-wrap: nowrap;
+    max-height: 17%;
+    overflow: scroll;
+}

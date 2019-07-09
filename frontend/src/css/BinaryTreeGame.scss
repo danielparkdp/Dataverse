@@ -1,0 +1,57 @@
+@import "./global_variables.scss";
+
+.pad-top-text {
+    padding-top: 10px;
+}
+
+.left-child-label {
+    top: 85%;
+    left: calc(25% - 32px);
+}
+
+.right-child-label {
+    top: 85%;
+    right: calc(25% - 50px);
+}
+
+.parent-label {
+    top: 12%;
+    left: calc(50% - 30px);
+}
+
+.bt-preview {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 310px;
+    height: 250px;
+    background-image: url('../img/binary-tree/bt-prev-lines.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.active-apple {
+    background: $apple-red;
+    z-index: 99;
+}
+
+.bt-left-key {
+    background-image:  url('../img/binary-tree/bt_left_input.png');
+    height: 158px;
+ }
+ 
+ .bt-right-key {
+     background-image:  url('../img/binary-tree/bt_right_input.png');
+     height: 158px;
+  }
+
+  .bt-up-key {
+    background-image:  url('../img/binary-tree/bt_up_input.png');
+    height: 158px;
+ }
+ 
+  .bt-enter-key {
+     background-image:  url('../img/binary-tree/bt_enter_input.png');
+     height: 158px;
+  }
+

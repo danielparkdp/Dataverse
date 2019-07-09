@@ -1,0 +1,46 @@
+
+@import "./global_variables.scss";
+
+.node{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+#outline{
+    position: absolute;
+    width: 1000px;
+    height: 280px;
+    min-height: 280px;
+    //height: auto;
+    top: 300px;
+    margin-left: -500px;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+
+#node-wrapper {
+    position: absolute;
+    width: 1000px;
+    margin-left: -500px;
+    left: 50%;
+    height: 100%;
+}
+
+ .clickable-node {
+     width: 70px;
+ }
+
+ .clickable-node:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+ }
+
+
+ #orange-text {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+ }

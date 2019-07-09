@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cd frontend &&
+npm run build &&
+cd .. &&
+rm -rf src/main/resources/* &&
+cp -r frontend/build/* src/main/resources &&
+
+
+rm data/final/login.sqlite3 &&
+touch data/final/login.sqlite3 &&
+
+git add -A &&
+git commit -m "Deploying to heroku" &&
+git push &&
+git push heroku master

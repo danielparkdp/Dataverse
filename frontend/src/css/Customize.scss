@@ -1,0 +1,79 @@
+@import "global_variables";
+.Customize {
+  position: absolute;
+  top: 100px;
+  left: 50vw;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  background: $main-bg-color;
+  z-index: 999;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.rocket {
+  width: 120px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+}
+
+
+.rocket-select-div {
+  margin-top: 70px;
+  margin-left: 110px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 200px;
+}
+
+#customize-left {
+  position: absolute;
+  left: 70px;
+  top: 220px;
+}
+
+
+#customize-right {
+  position: absolute;
+  left: 360px;
+  top: 220px;
+}
+
+#customize-left:hover {
+  cursor: pointer;
+}
+#customize-right:hover {
+  cursor: pointer;
+}
+
+
+.rocket-submit {
+  outline: none;
+  border: none;
+  color: white;
+  background: $accent;
+  width: 150px;
+  height: 40px;
+  font-family: Nunito;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.rocket-submit:hover {
+  background: $accent_hover;
+  cursor: pointer;
+
+}
+
+#customize-close {
+  top: 10px;
+  left: 450px;
+}

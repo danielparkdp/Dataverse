@@ -1,0 +1,14 @@
+input[type="number"] {
+  width: 3em;
+}
+body {
+    background-color: #3d3d6a;
+}
+h1 {
+	font-family: Verdana,Helvetica;
+	color: #d4d4ff;
+}
+p {
+	font-family: Verdana,Helvetica;
+	color: #d4d4ff;
+}

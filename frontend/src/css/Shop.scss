@@ -1,0 +1,111 @@
+@import "global_variables";
+.Shop {
+  position: absolute;
+  color:white;
+  top: 100px;
+  left: 50vw;
+  width: 450px;
+  height: 500px;
+  margin-left: -250px;
+  background: $main-bg-color;
+  z-index: 999;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.item-pic {
+  width: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.money-amount{
+    padding:5px;
+    display:inline-block;
+    margin-left:10%;  
+    margin-right:10%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.items-for-sale-div {
+  margin: 50px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 240px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.money-stats{
+    font-size: 8pt;
+    color: $light-gray;
+    font-weight: 100;
+}
+
+.item-for-sale:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.item-for-sale{
+    background: $accent;
+    border-radius: 5px;
+    //padding-left:10px;
+    //padding-right:10px;
+    padding:10px;
+    //i dont understand this
+    justify-content: space-evenly;
+    //this centers the text in the box
+    align-items: center;
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    object-fit: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+
+  /* To horizontally center images and caption */
+    text-align: center;
+
+    min-height: 110px;
+}
+
+
+
+.item-cost {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
+
+
+.buy-item {
+  outline: none;
+  border: none;
+  color: white;
+  background: $accent;
+  width: 150px;
+  height: 40px;
+  font-family: Nunito;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.buy-item:hover {
+  background: $accent_hover;
+  cursor: pointer;
+
+}
+
+#shop-close {
+  top: 10px;
+  left: 450px;
+}
+
+#shop-welcome {
+  margin-left: 40px;
+  margin-bottom: 0px;
+}

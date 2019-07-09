@@ -1,0 +1,16 @@
+.Rocket {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  width: 65px;
+  height: 100px;
+  left: 100px;
+  background-image: url("../img/rockets/rocket_red.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: top 10ms, left 10ms;
+
+
+}
+
+

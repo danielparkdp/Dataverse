@@ -1,0 +1,81 @@
+@import "global_variables";
+
+.player-tag-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+    /*background-color: #7b7c7c;*/
+    background-color: Transparent;
+
+    height: 35px;
+    text-align: center;
+    vertical-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    color: white;
+
+}
+
+
+.ready {
+    background-color: #60a565;
+}
+
+.not-ready {
+    background: rgba(120, 120, 120, 0.60);
+    color: lightgray;
+    border: 2px solid lightgray;
+}
+
+.not-ready:hover {
+    cursor: default;
+    background: rgba(120, 120, 120, 0.60);
+    color: lightgray;
+    border: 2px solid lightgray;
+}
+.player-tag-wrapper button {
+    border: none;
+    margin-top: 12px;
+    margin-left: 4px;
+
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+
+    /*background-color: #585859;*/
+    background-color: Transparent;
+    color: white;
+
+
+}
+
+.player-tag-wrapper button:hover {
+    /*background-color: #4f4f4f;*/
+    background-color: Transparent;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+
+.player-tag-wrapper p {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px 5px;
+
+
+}
+
+
+
+.player_name {
+    /*display: inline-block;*/
+    white-space:pre;
+    margin: 10px;
+
+}
+.name {
+
+}

@@ -1,0 +1,130 @@
+@import "./global_variables.scss";
+
+.planet {
+   width: 220px;
+   top: 0px;
+   left: 0px;
+   margin: 0px;
+   padding: 0px;
+   background-size: 90%;
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   text-align: center;
+}
+
+.planet-div {
+    position: absolute;
+    z-index: 5;
+}
+
+.planet-wrapper {
+  position: absolute;
+  text-align:center;
+}
+
+.hover {
+  color: white;
+  font-weight: bold;
+  font-family: Nunito;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.canEnterPlanet {
+  color: white;
+  font-weight: bold;
+  font-family: Nunito;
+  position: absolute;
+  top: 48vh;
+  left: 42vw;
+  z-index: 999;
+}
+
+.border {
+  position: absolute;
+  left: -900px;
+  top: -900px;
+  width: 1800px;
+  height: 1800px;
+  border: 2px solid magenta;
+}
+
+.bg {
+    //background: $space-color;
+   
+    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.space-bg {
+    //background: $main-bg-color;
+    //opacity: 0.4;
+    //background-size: 100%;
+    //background-image: $space-img;
+    //height: 1800px;
+    //width: 2200px;
+    //position: fixed;
+    //top: -500px;
+    //left: -500px;
+}
+
+.world {
+    height: 2000px; //dim
+    width: 2000px; //dim
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    //background: $space-color;
+    //background-image: linear-gradient(-90deg, $light-space-color, $space-color);
+    //background-image: linear-gradient(-45deg, $darker-space-color,#16202d);
+    //background-image: linear-gradient(to bottom right, #16202d,  $darker-space-color);
+    //background-image: linear-gradient(to bottom right,#17212d,  $darker-space-color);
+    //background-image: linear-gradient(to bottom right #423e6d,  rgb(21, 7, 39));
+   // background-image: linear-gradient(to bottom right red,  black);
+   
+   // background-image: linear-gradient(120deg, #25273d, $space-color);
+}
+
+.world-view {
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    background-image: linear-gradient(to bottom right, #23253d 0%, $darker-space-color 60%);
+}
+
+.stars-front {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 4000px;
+  width: 4000px; //dim
+  background-image: url("../img/front_star_layer_small.png");
+  z-index: 0;
+  background-size: 50%;
+  background-repeat: repeat;
+  overflow:hidden;
+  opacity: .65;
+}
+
+
+
+.stars-back {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 4000px;
+  width: 4000px; //dim
+  background-image: url("../img/back_star_layer_small.png");
+  z-index: 0;
+  background-size: 50%;
+  background-repeat: repeat;
+  overflow:hidden;
+}
+

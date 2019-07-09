@@ -1,0 +1,266 @@
+@import "./global_variables.scss";
+
+.game-div {
+    height: 100vh;
+    text-align: center;
+    z-index: 14;
+    overflow: scroll;
+}
+
+.target-div {
+    position: fixed;
+    background: white;
+    width: 17%;
+    height: 280px;
+    max-width: 240px;
+    min-width: 220px;
+    border-radius: 10px;
+    left: 5%;
+    top: 10%;
+    text-align: center;
+}
+
+.target {
+    width: 62%;
+    height: 63%;
+    background-size: 100%;
+    margin: auto;
+    vertical-align:middle;
+    line-height: 150px;
+    font-size: 32px;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.target-label {
+    font-size: 16px;
+    font-family: Nunito;
+    letter-spacing: 3px;
+    margin:auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.score-box {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 12px;
+    font-weight: 600;
+    font-family: Nunito;
+    position:fixed;
+    border-radius: 10px;
+    width: 12%;
+    height: 75px;
+    top: 10%;
+    color:white;
+    right: 5%;
+    text-align: center;
+    padding-top: 20px;
+    border: solid white;
+    border-width: 2px 2px;
+}
+
+.flash-score-red {
+  animation: flash-score-red 0.4s;
+}
+
+@keyframes flash-score-red {
+  0% {
+  }
+  50% {
+      border: solid $apple-red;
+      transform: scale(1.15);
+      color: $apple-red;
+  }
+  100% {
+  }
+}
+
+.time-box {
+    right: 20%;
+}
+
+.opponent-score-div {
+  position: absolute;
+  margin: 0;
+  padding: 15px;
+  color: white;
+  background: $main-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top:-65px;
+  align-items: center;
+  font-size: 18px;
+  right: 5%;
+  line-height: 30px;
+  border-radius: 10px;
+  font-weight: 200;
+  top: 68%;
+  max-height: 350px;
+  overflow: scroll;
+}
+
+
+.fadeOut {
+  animation: fade-out 0.2s;
+}
+
+.fadeIn {
+  animation: fade-in 0.2s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.curr-node {
+  position: absolute;
+  background-repeat: none;
+  top: 38%;
+  left: 50%;
+  margin-left: -175px;
+  width: 350px;
+  height: 350px;
+  background-size: 100%;
+  vertical-align:middle;
+  line-height: 350px;
+  font-size: 72px;
+  color: white;
+  margin:auto;
+  margin-left: -175px;
+  text-align: center;
+}
+
+.prev-node {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   border-radius: 12px;
+   background: gray;
+}
+
+.apple-red-color {
+  color: $apple-red;
+}
+
+.instructionsPic {
+  width: 42%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin:8px;
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+
+.flash-box-red {
+  animation: flash-box-red .4s;
+}
+
+.flash-box-green {
+  animation: flash-box-green .4s;
+}
+
+@keyframes flash-box-red {
+  0% {
+      background: white;
+  }
+  /* Adding a step in the middle */
+  50% {
+      background: $apple-red;
+      transform: scale(1.1)
+  }
+  100% {
+      background: white;
+      transform: scale(1)
+  }
+}
+
+@keyframes flash-box-green {
+  0% {
+      background: white;
+  }
+  /* Adding a step in the middle */
+  50% {
+      background: $apple-green;
+      transform: scale(1.1)
+  }
+  100% {
+      background: white;
+      transform: scale(1)
+  }
+}
+
+
+.back-button {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  border-radius: 1px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  cursor: pointer;
+  z-index: 999;
+}
+
+.back-button:hover {
+  transform: rotate(135deg) scale(1.2);
+}
+
+//the div for the amount of score you will earn next
+.next-points-div{
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 12px;
+  font-weight: 600;
+  font-family: Nunito;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.missed-points-div{
+  animation: flash-reward-red .4s;
+}
+
+@keyframes flash-reward-red {
+  0% {
+    
+  }
+  50% {
+    color: red;
+    transform: scale(1.3);
+    font-weight: bolder;
+  }
+  100% {
+    color: black;
+    transform: scale(1)
+  }
+}
+
+
+
+
+

@@ -1,0 +1,67 @@
+
+@import "./global_variables.scss";
+
+.prev-label {
+    top: 75%;
+    left: calc(25% - 32px);
+}
+
+.next-label {
+     top: 75%;
+     right: calc(25%);
+}
+
+.ll-preview {
+    position: absolute;
+    top: 110px;
+   left: 30%;
+   //top: 250px;
+  //  right: 0px;
+    width: 450px;
+    height: 250px;
+    
+}
+
+.active-cookie {
+    background: $cookie-color;
+    z-index: 99;
+    top: 40%;
+}
+
+.other-user-cookie {
+    background: $main-bg-color;
+    z-index: 98;
+    top: 40%;
+}
+
+#ll-prev-box {
+    width: 420px;
+    height: 40px;
+    margin-left: -2px;
+    border: solid white;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 50px;
+}
+
+.instructionsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top:0%;
+    margin-bottom:0px;
+}
+
+.ll-left-key {
+   background-image:  url('../img/linked-list/ll_left_arrow.png');
+}
+
+.ll-right-key {
+    background-image:  url('../img/linked-list/ll_right_arrow.png');
+ }
+
+ .ll-enter-key {
+    background-image:  url('../img/linked-list/ll_enter.png');
+ }

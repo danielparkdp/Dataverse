@@ -1,0 +1,188 @@
+@import "./global_variables.scss";
+
+.ingredient {
+ width: 190px;
+ height: 120px;
+ background-size: 100%;
+ background-repeat: no-repeat;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+
+.clickable:hover {
+    transform: scale(1.15);
+    color: gray;
+}
+
+.burgTop {
+    background-image: url('../img/burger/burger_top.png');
+    height: 100px;
+ }
+
+.lettuce {
+    background-image: url('../img/burger/lettuce.png');
+    height: 40px;
+}
+
+.tomato {
+    background-image: url('../img/burger/tomato.png');
+    height: 60px;
+}
+
+.cheese {
+    background-image: url('../img/burger/cheese.png');
+    height: 60px;
+}
+
+.meat {
+    background-image: url('../img/burger/meat.png');
+    height: 75px;
+}
+
+.burgBtm {
+    background-image: url('../img/burger/burger_bottom.png');
+    height: 85px;
+}
+
+.plate {
+    background-image: url('../img/burger/plate.png');
+    height: 80px;
+    width: 260px;
+}
+
+.plate {
+    transform: scale(1);
+}
+
+.order-ing {
+    padding: 1px;
+}
+
+.build-item {
+    padding: 10px;
+}
+
+.ingGroup {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    top:75%;
+    left: 0%;
+    width: 95%;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.order-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    margin-top:-65px;
+    align-items: center;
+    transform: scale(.60);
+}
+
+.build-burger-div {
+    position: fixed;
+    padding: 0px;
+    top: 10%;
+    left: 45%;
+    border-radius: 10px;
+    width: 19%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    border: solid white;
+    border-width: 2px 2px;
+    align-items: center;
+    max-width: 220px;
+    min-width: 180px;
+}
+
+.build-burger-div-inner {
+    display: flex;
+    margin: auto;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 500px;
+    width: 100%;
+    margin-top: -50px;
+    transform: scale(.7);
+}
+
+.output-div {
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top:0px;
+    top: 10%;
+    left: 25%;
+    border-radius: 10px;
+    width: 15%;
+    height: 30%;
+    color:white;
+    text-align: center;
+    align-items: center;
+    transform: scale(.7);
+}
+
+.output-div-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    width: 280px;
+    height: 560px;
+    color:white;
+    text-align: center;
+    align-items: center;
+}
+
+.burger-instr {
+    width: 48%;
+}
+
+.on-game-inst {
+    position: absolute;
+    right: 100px;
+    top: 220px;
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+}
+
+#serve-btn {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    padding: 10px;
+    width: 20%;
+    font-size: 1.5vw;
+    color: white;
+    background: $apple-green;
+    line-height: 200%;
+    border-radius: 15px;
+}
+
+#serve-btn:hover {
+    background: darkgreen;
+    font-weight: 600;
+}
+
+#error-msg-qg {
+    position: absolute;
+    font-size: 18px;
+    color: red;
+    top: 40%;
+    font-weight: 600;
+    width: 20%;
+    right: 10%;
+}
