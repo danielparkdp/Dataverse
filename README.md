@@ -9,7 +9,7 @@ Dataverse was created and developed by Laura Wilson, Daniel Park, Camillo Sauere
 (Migrated code into this repo)
 
 
-To try out Dataverse, you can visit dataverse.fun and play!
+To try out Dataverse, you can visit www.dataverse.fun and play!
 
 
 ### General Design of Program:
