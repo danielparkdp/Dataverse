@@ -2,7 +2,7 @@
 
 Welcome to Dataverse, an open-world game to demonstrate the power of data structures!
 
-Dataverse was created using React.js and and Spark for Java.
+Dataverse was created using React.js and Spark for Java.
 
 Dataverse was created and developed by Laura Wilson, Daniel Park, Camillo Saueressig, and Grace Bramley-Simmons.
 
